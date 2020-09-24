@@ -4,13 +4,13 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 
-namespace ExoLINQ
+namespace ExoLINQ_1
 {
     class Program
     {
         static void Main(string[] args)
         {
-            Console.WriteLine("Nombre premier jusqu'à : ");
+            Console.WriteLine("Saisir jusqu'a quel nombre vous voulez savoir : ");
             var listNumber = new List<int>();
             try
             {
@@ -18,7 +18,8 @@ namespace ExoLINQ
                 var listFirsts = FirstList(listNumber);
                 listFirsts.ForEach(f =>
                 {
-                    Console.WriteLine(f);
+                    Console.WriteLine(f+" N'est pas premier");
+                    Console.ReadLine();
                 });
             }
             catch
